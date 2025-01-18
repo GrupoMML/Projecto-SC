@@ -1,1 +1,1 @@
-# Projecto-SC
+Projecto sistemas computacionais
