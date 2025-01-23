@@ -127,8 +127,8 @@ void loop() {
     lcd.setCursor(3, 1);
     lcd.print("Interdita");
 
-    Serial.println("Ponte interdita, a levantar.");
-    BTSerial.println("Ponte interdita, a levantar.");
+    Serial.println("Ponte interdita, a levantar cancela.");
+    BTSerial.println("Ponte interdita, a levantar cancela.");
 
     // Ativar o buzzer enquanto exibe a mensagem
     digitalWrite(buzzer, HIGH);
