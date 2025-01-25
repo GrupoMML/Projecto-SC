@@ -9,8 +9,8 @@
 /*--------------------------------------------------------- */
 Servo myservo;
 #define SENSOR_NIVEL_PIN 7 // Pino onde está ligado o sensor de nível de água
-#define DHT11_PIN 8        // Pino onde está ligado o sensor DHT11 de temperatura e humidade
-int buzzer = 6;           // Pino onde está ligado o buzzer (alarme)
+#define DHT11_PIN 8        // Pino onde está ligado o sensor DHT11 
+int buzzer = 6;           // Pino onde está ligado o buzzer 
 int angulo = 0;           // Variável para armazenar o ângulo do servo
 
 DHT11 dht11(DHT11_PIN);              // Instancia o sensor DHT11
@@ -72,7 +72,7 @@ void loop() {
       BTSerial.println(humidade);
 
       // Se a temperatura ou humidade for muito alta, ativar o buzzer
-      if (temperatura >= 55 || humidade >= 80) {
+      if (temperatura >= 50 || humidade >= 80) {
         digitalWrite(buzzer, HIGH);  // Ativar o buzzer
       } else {
         digitalWrite(buzzer, LOW);   // Desativar o buzzer
